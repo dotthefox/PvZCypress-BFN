@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{1f724cfc-a00a-4e20-9481-37550d26cd6f}</ProjectGuid>
+    <RootNamespace>GW2ServerProject</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Cypress</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;GW2SERVERPROJECT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;GW2SERVERPROJECT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;GW2SERVERPROJECT_EXPORTS;CYPRESS_BFN;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)Source;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>EASTL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;CYPRESS_BFN;GW2SERVERPROJECT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)Source;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>EASTL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\EABase\config\eacompiler.h" />
+    <ClInclude Include="include\EABase\config\eacompilertraits.h" />
+    <ClInclude Include="include\EABase\config\eaplatform.h" />
+    <ClInclude Include="include\EABase\eabase.h" />
+    <ClInclude Include="include\EABase\eahave.h" />
+    <ClInclude Include="include\EABase\earesult.h" />
+    <ClInclude Include="include\EABase\eastdarg.h" />
+    <ClInclude Include="include\EABase\eaunits.h" />
+    <ClInclude Include="include\EABase\int128.h" />
+    <ClInclude Include="include\EABase\nullptr.h" />
+    <ClInclude Include="include\EABase\version.h" />
+    <ClInclude Include="include\EAStdC\EAAlignment.h" />
+    <ClInclude Include="include\EAStdC\EABitTricks.h" />
+    <ClInclude Include="include\EAStdC\EAByteCrackers.h" />
+    <ClInclude Include="include\EAStdC\EACallback.h" />
+    <ClInclude Include="include\EAStdC\EACType.h" />
+    <ClInclude Include="include\EAStdC\EADateTime.h" />
+    <ClInclude Include="include\EAStdC\EAEndian.h" />
+    <ClInclude Include="include\EAStdC\EAFixedPoint.h" />
+    <ClInclude Include="include\EAStdC\EAGlobal.h" />
+    <ClInclude Include="include\EAStdC\EAHashCRC.h" />
+    <ClInclude Include="include\EAStdC\EAHashString.h" />
+    <ClInclude Include="include\EAStdC\EAMathHelp.h" />
+    <ClInclude Include="include\EAStdC\EAMemory.h" />
+    <ClInclude Include="include\EAStdC\EAProcess.h" />
+    <ClInclude Include="include\EAStdC\EARandom.h" />
+    <ClInclude Include="include\EAStdC\EARandomDistribution.h" />
+    <ClInclude Include="include\EAStdC\EAScanf.h" />
+    <ClInclude Include="include\EAStdC\EASingleton.h" />
+    <ClInclude Include="include\EAStdC\EASprintf.h" />
+    <ClInclude Include="include\EAStdC\EASprintfOrdered.h" />
+    <ClInclude Include="include\EAStdC\EAStdC.h" />
+    <ClInclude Include="include\EAStdC\EAStopwatch.h" />
+    <ClInclude Include="include\EAStdC\EAString.h" />
+    <ClInclude Include="include\EAStdC\EATextUtil.h" />
+    <ClInclude Include="include\EAStdC\Int128_t.h" />
+    <ClInclude Include="include\EAStdC\internal\Config.h" />
+    <ClInclude Include="include\EAStdC\internal\IntrusiveList.h" />
+    <ClInclude Include="include\EAStdC\internal\ScanfCore.h" />
+    <ClInclude Include="include\EAStdC\internal\SprintfCore.h" />
+    <ClInclude Include="include\EAStdC\internal\stdioEA.h" />
+    <ClInclude Include="include\EAStdC\internal\Thread.h" />
+    <ClInclude Include="include\EAStdC\version.h" />
+    <ClInclude Include="include\EASTL\algorithm.h" />
+    <ClInclude Include="include\EASTL\allocator.h" />
+    <ClInclude Include="include\EASTL\basic_array.h" />
+    <ClInclude Include="include\EASTL\bitset.h" />
+    <ClInclude Include="include\EASTL\bitvector.h" />
+    <ClInclude Include="include\EASTL\bonus\sort_extra.h" />
+    <ClInclude Include="include\EASTL\core_allocator_adapter.h" />
+    <ClInclude Include="include\EASTL\fixed_allocator.h" />
+    <ClInclude Include="include\EASTL\fixed_hash_map.h" />
+    <ClInclude Include="include\EASTL\fixed_hash_set.h" />
+    <ClInclude Include="include\EASTL\fixed_list.h" />
+    <ClInclude Include="include\EASTL\fixed_map.h" />
+    <ClInclude Include="include\EASTL\fixed_set.h" />
+    <ClInclude Include="include\EASTL\fixed_string.h" />
+    <ClInclude Include="include\EASTL\fixed_substring.h" />
+    <ClInclude Include="include\EASTL\fixed_vector.h" />
+    <ClInclude Include="include\EASTL\functional.h" />
+    <ClInclude Include="include\EASTL\hash_map.h" />
+    <ClInclude Include="include\EASTL\hash_set.h" />
+    <ClInclude Include="include\EASTL\heap.h" />
+    <ClInclude Include="include\EASTL\internal\config.h" />
+    <ClInclude Include="include\EASTL\internal\eastl_rw.h" />
+    <ClInclude Include="include\EASTL\internal\fixed_pool.h" />
+    <ClInclude Include="include\EASTL\internal\generic_iterator.h" />
+    <ClInclude Include="include\EASTL\internal\hashtable.h" />
+    <ClInclude Include="include\EASTL\internal\red_black_tree.h" />
+    <ClInclude Include="include\EASTL\internal\type_compound.h" />
+    <ClInclude Include="include\EASTL\internal\type_fundamental.h" />
+    <ClInclude Include="include\EASTL\internal\type_pod.h" />
+    <ClInclude Include="include\EASTL\internal\type_properties.h" />
+    <ClInclude Include="include\EASTL\internal\type_transformations.h" />
+    <ClInclude Include="include\EASTL\iterator.h" />
+    <ClInclude Include="include\EASTL\list.h" />
+    <ClInclude Include="include\EASTL\map.h" />
+    <ClInclude Include="include\EASTL\memory.h" />
+    <ClInclude Include="include\EASTL\new_string.h" />
+    <ClInclude Include="include\EASTL\set.h" />
+    <ClInclude Include="include\EASTL\sort.h" />
+    <ClInclude Include="include\EASTL\string.h" />
+    <ClInclude Include="include\EASTL\type_traits.h" />
+    <ClInclude Include="include\EASTL\utility.h" />
+    <ClInclude Include="include\EASTL\vector.h" />
+    <ClInclude Include="include\eastl_arena_allocator.h" />
+    <ClInclude Include="include\fb\Engine\Array.h" />
+    <ClInclude Include="include\fb\Engine\Console.h" />
+    <ClInclude Include="include\fb\Engine\ExecutionContext.h" />
+    <ClInclude Include="include\fb\Engine\ITypedObject.h" />
+    <ClInclude Include="include\fb\Engine\MemoryArena.h" />
+    <ClInclude Include="include\fb\Engine\Message.h" />
+    <ClInclude Include="include\fb\Engine\MessageListener.h" />
+    <ClInclude Include="include\fb\Engine\Schematics.h" />
+    <ClInclude Include="include\fb\Engine\ScriptContext.h" />
+    <ClInclude Include="include\fb\Engine\String.h" />
+    <ClInclude Include="include\fb\Engine\ResourceManager.h" />
+    <ClInclude Include="include\fb\Engine\TypeInfo.h" />
+    <ClInclude Include="include\fb\Engine\WeakPtr.h" />
+    <ClInclude Include="include\fb\Engine\Client.h" />
+    <ClInclude Include="include\fb\Engine\LevelSetup.h" />
+    <ClInclude Include="include\fb\Engine\Server.h" />
+    <ClInclude Include="include\fb\Engine\ServerConnection.h" />
+    <ClInclude Include="include\fb\Engine\ServerGameContext.h" />
+    <ClInclude Include="include\fb\Engine\ServerPeer.h" />
+    <ClInclude Include="include\fb\Engine\ServerPlayer.h" />
+    <ClInclude Include="include\fb\Engine\ServerPlayerManager.h" />
+    <ClInclude Include="include\fb\Main.h" />
+    <ClInclude Include="include\fb\SecureReason.h" />
+    <ClInclude Include="include\GameModules\BFNModule.h" />
+    <ClInclude Include="include\IGameModule.h" />
+    <ClInclude Include="include\Kyber\SocketCreator.h" />
+    <ClInclude Include="include\Kyber\SocketManager.h" />
+    <ClInclude Include="include\Kyber\SocketSpawnInfo.h" />
+    <ClInclude Include="include\Kyber\UDPSocket.h" />
+    <ClInclude Include="include\MemUtil.h" />
+    <ClInclude Include="include\MinHook\buffer.h" />
+    <ClInclude Include="include\MinHook\hde\hde32.h" />
+    <ClInclude Include="include\MinHook\hde\hde64.h" />
+    <ClInclude Include="include\MinHook\hde\pstdint.h" />
+    <ClInclude Include="include\MinHook\hde\table32.h" />
+    <ClInclude Include="include\MinHook\hde\table64.h" />
+    <ClInclude Include="include\MinHook\MinHook.h" />
+    <ClInclude Include="include\MinHook\trampoline.h" />
+    <ClInclude Include="include\ServerBanlist.h" />
+    <ClInclude Include="include\ServerPlaylist.h" />
+    <ClInclude Include="include\StringUtil.h" />
+    <ClInclude Include="Source\Core\Assert.h" />
+    <ClInclude Include="Source\Core\Client.h" />
+    <ClInclude Include="Source\Core\Config.h" />
+    <ClInclude Include="Source\Core\Console\ConsoleFunctions.h" />
+    <ClInclude Include="Source\Core\Logging.h" />
+    <ClInclude Include="Source\Core\Program.h" />
+    <ClInclude Include="Source\Core\Server.h" />
+    <ClInclude Include="Source\Core\Settings.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="include\fb\Engine\SettingsManager.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Source\Core\VersionInfo.h" />
+    <ClInclude Include="Source\GameHooks\fbClientHooks.h" />
+    <ClInclude Include="Source\GameHooks\fbEnginePeerHooks.h" />
+    <ClInclude Include="Source\GameHooks\fbMainHooks.h" />
+    <ClInclude Include="Source\GameHooks\fbServerHooks.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="include\eastl_arena_allocator.cpp" />
+    <ClCompile Include="include\fb\Engine\MessageListener.cpp" />
+    <ClCompile Include="include\Kyber\SocketManager.cpp" />
+    <ClCompile Include="include\Kyber\UDPSocket.cpp" />
+    <ClCompile Include="include\MinHook\buffer.cpp" />
+    <ClCompile Include="include\MinHook\hde\hde32.cpp" />
+    <ClCompile Include="include\MinHook\hde\hde64.cpp" />
+    <ClCompile Include="include\MinHook\hook.cpp" />
+    <ClCompile Include="include\MinHook\trampoline.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Assert.cpp" />
+    <ClCompile Include="Source\Core\Client.cpp" />
+    <ClCompile Include="Source\Core\Console\ConsoleFunctions.cpp" />
+    <ClCompile Include="Source\Core\Logging.cpp" />
+    <ClCompile Include="Source\Core\Program.cpp" />
+    <ClCompile Include="Source\Core\Server.cpp" />
+    <ClCompile Include="Source\GameHooks\fbClientHooks.cpp" />
+    <ClCompile Include="Source\GameHooks\fbEnginePeerHooks.cpp" />
+    <ClCompile Include="Source\GameHooks\fbMainHooks.cpp" />
+    <ClCompile Include="Source\GameHooks\fbServerHooks.cpp" />
+    <ClCompile Include="Source\GameModules\BFNModule.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\EAStdC\internal\EAMemory.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
