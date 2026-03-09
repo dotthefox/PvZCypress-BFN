@@ -1,5 +1,5 @@
 # Cypress - BFN
-Cypress - BFN is a modified version of [Cypress,](https://github.com/BreakfastBrainz2/PvZCypress/) an Open-Source reimplementation of Dedicated Servers for PvZ: Garden Warfare 1 and 2, based off of [KYBER V1 (a Private Server project for Star Wars: Battlefront 2).](https://github.com/ArmchairDevelopers/Kyber) to add support for Battle for Neighborville. Made by your's truly, Ghup!
+Cypress - BFN is a modified version of [Cypress,](https://github.com/BreakfastBrainz2/PvZCypress/) an Open-Source reimplementation of Dedicated Servers for PvZ: Garden Warfare 1 and 2, based off of [KYBER V1 (a Private Server project for Star Wars: Battlefront 2).](https://github.com/ArmchairDevelopers/Kyber) to add support for Battle for Neighborville. Made by yours truly, Ghup!
 
 # Credits
 * [KYBER](https://github.com/ArmchairDevelopers/Kyber) - Without their reimplementation of Frostbite's Socket Manager, this project would likely not exist.
