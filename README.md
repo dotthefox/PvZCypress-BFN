@@ -10,7 +10,7 @@ Cypress - BFN is a modified version of [Cypress,](https://github.com/BreakfastBr
 See [LICENSE.txt](LICENSE.txt)
 
 # Building
-Cypress should build out out of the box as long as you're using Visual Studio 2026.
+Cypress - BFN should build out out of the box as long as you're using Visual Studio 2026.
 
 # Usage
 TODO - more in depth instructions here
@@ -19,6 +19,6 @@ Cypress - BFN is only compatible with the v1.0.55.50002 (last pre-EA Anticheat v
 After compiling the project, place the compiled dll in the game's directory and rename it to dinput8.dll
 
 An example batch file that launches a dedicated server can be found at Examples/Start_Dedicated.bat
-When run from the game directory, this will launch a Team Vanquish server on Zomboss Factory, with a max player count of 48.
+When run from the game directory, this will launch a Giddy Park server, with a max player count of 48.
 
 For joining, see Examples/Start_Join.bat
