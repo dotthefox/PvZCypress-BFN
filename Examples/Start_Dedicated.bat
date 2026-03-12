@@ -13,6 +13,7 @@ start PVZBattleforNeighborville.exe ^
 -listen 192.168.1.70:25200 ^
 -Online.ClientIsPresenceEnabled 0 ^
 -Online.ServerIsPresenceEnabled 0 ^
+-Game.Platform GamePlatform_Win32 ^
 -GameMode.ForceHUBSeason 4 ^
 -name "BFN Server" ^
 -platform Win32 ^
