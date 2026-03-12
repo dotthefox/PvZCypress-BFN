@@ -95,6 +95,7 @@ void Cypress::BFNModule::RegisterCommands()
 	CYPRESS_REGISTER_CONSOLE_FUNCTION(Server::ServerRestartLevel, "Server.RestartLevel", 0);
 	CYPRESS_REGISTER_CONSOLE_FUNCTION(Server::ServerLoadLevel, "Server.LoadLevel", 0);
 	CYPRESS_REGISTER_CONSOLE_FUNCTION(Server::ServerLoadNextRound, "Server.LoadNextRound", 0);
+	CYPRESS_REGISTER_CONSOLE_FUNCTION(Server::ServerLoadNextRound, "Server.LoadNextPlaylistSetup", 0);
 	CYPRESS_REGISTER_CONSOLE_FUNCTION(Server::ServerKickPlayer, "Server.KickPlayer", 0);
 	CYPRESS_REGISTER_CONSOLE_FUNCTION(Server::ServerKickPlayerById, "Server.KickPlayerById", 0);
 	CYPRESS_REGISTER_CONSOLE_FUNCTION(Server::ServerBanPlayer, "Server.BanPlayer", 0);

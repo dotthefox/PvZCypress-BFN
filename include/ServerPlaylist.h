@@ -71,8 +71,9 @@ public:
                     levelSetup.GameMode = setup["GameMode"].get<std::string>();
                     levelSetup.StartPoint = setup["StartPoint"].get<std::string>();
 
-                    if (setup.contains("SettingsToApply"))
-                        levelSetup.SettingsToApply = setup["SettingsToApply"].get<std::string>();
+                    setup.contains("SettingsToApply")
+                        ? levelSetup.SettingsToApply = setup["SettingsToApply"].get<std::string>()
+                        : levelSetup.SettingsToApply = "";
 
                     setup.contains("Loadscreen_LevelName")
                         ? levelSetup.Loadscreen_LevelName = setup["Loadscreen_LevelName"].get<std::string>()

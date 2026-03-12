@@ -198,8 +198,8 @@ DEFINE_HOOK(
 			break;
 		}
 	}
-
-	static const char* bannedChars = "\t\n!\"#$%&'()*+,./:;<=>?@[\\]^`{|}~";
+	// Original value if you want to reimplement them back || bannedChars = "\t\n!\"#$%&'()*+,./:;<=>?@[\\]^`{|}~";
+	static const char* bannedChars = "\t\n!\"";
 	if (strpbrk(playerName, bannedChars) != nullptr)
 	{
 		thisPtr->disconnect(fb::SecureReason_KickedOut, "Invalid Characters in Username");
