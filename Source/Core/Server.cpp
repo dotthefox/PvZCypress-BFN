@@ -125,16 +125,16 @@ namespace Cypress
 		switch (numArgs)
 		{
 		case 4:
-			setup.m_loadScreen_GameMode = args[2].c_str();
+			setup.m_loadScreen_LevelName = args[3].c_str();
 			break;
 		case 5:
-			setup.m_loadScreen_GameMode = args[2].c_str();
 			setup.m_loadScreen_LevelName = args[3].c_str();
+			setup.m_loadScreen_GameMode = args[4].c_str();
 			break;
 		case 6:
-			setup.m_loadScreen_GameMode = args[2].c_str();
 			setup.m_loadScreen_LevelName = args[3].c_str();
-			setup.m_loadScreen_LevelDescription = args[4].c_str();
+			setup.m_loadScreen_GameMode = args[4].c_str();
+			setup.m_loadScreen_LevelDescription = args[5].c_str();
 			break;
 		}
 
